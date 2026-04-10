@@ -27,6 +27,17 @@ A decentralized peer-to-peer energy trading platform that enables homeowners wit
 - **Security**: JWT authentication, encryption
 
 ## Quick Start
+
+### Option 1: Run the Demo Script (Recommended)
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the comprehensive demo
+python demo.py
+```
+
+### Option 2: Run the API Server
 ```bash
 # Install dependencies
 pip install -r requirements.txt
@@ -34,7 +45,8 @@ pip install -r requirements.txt
 # Run backend server
 python main.py
 
-# Access dashboard at http://localhost:8000
+# Access API documentation at http://localhost:8000/docs
+# Access interactive ReDoc at http://localhost:8000/redoc
 ```
 
 ## Project Structure
@@ -42,10 +54,11 @@ python main.py
 /workspace
 ├── main.py                 # FastAPI application entry point
 ├── models.py               # Data models and schemas
-├── energy_trading.py       # Core trading logic
+├── energy_trading.py       # Core trading logic with order matching
 ├── pricing_engine.py       # Dynamic pricing algorithms
-├── ledger.py               # Transaction ledger system
-├── analytics.py            # Energy prediction and analytics
+├── ledger.py               # Blockchain-inspired transaction ledger
+├── analytics.py            # ML-powered energy prediction and analytics
+├── demo.py                 # Comprehensive demonstration script
 ├── requirements.txt        # Python dependencies
 └── README.md              # This file
 ```
